@@ -9,10 +9,10 @@ pipeline {
     stages {
 
         stage('Checkout') {
-            steps {
-                git 'https://github.com/nimitha120706/demo-appMaven.git'
-            }
-        }
+    steps {
+        git branch: 'main', url: 'https://github.com/nimitha120706/demo-appMaven.git'
+    }
+}
 
         stage('Build') {
             steps {
